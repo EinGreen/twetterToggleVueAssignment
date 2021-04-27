@@ -1,18 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header-header></header-header>
+    <twetter-section></twetter-section>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TwetterSection from "./components/TwetterSection.vue";
+import HeaderHeader from "./components/HeaderHeader.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    TwetterSection,
+    HeaderHeader,
+  },
 }
 </script>
 
@@ -21,8 +23,10 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  align-content: center;
+  justify-content: center;
+  /* still tried to fix to look nice, still failed */
 }
 </style>
